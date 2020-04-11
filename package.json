@@ -1,0 +1,21 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "#### Usage",
+  "main": "index.js",
+  "scripts": {
+    "setup-dot": "cd ~/.dotfiles && source bootstrap.sh",
+    "setup-brew": "cd ~/.dotfiles && source brew.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidholyko/dotfiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidholyko/dotfiles/issues"
+  },
+  "homepage": "https://github.com/davidholyko/dotfiles#readme"
+}
