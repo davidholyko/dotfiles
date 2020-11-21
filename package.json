@@ -4,8 +4,8 @@
   "description": "#### Usage",
   "main": "index.js",
   "scripts": {
-    "setup-dot": "cd ~/.dotfiles && source bootstrap.sh",
-    "setup-brew": "cd ~/.dotfiles && source brew.sh"
+    "bootstrap": "cd ~/.dotfiles && source bootstrap.sh",
+    "brew": "cd ~/.dotfiles && source brew.sh"
   },
   "repository": {
     "type": "git",
