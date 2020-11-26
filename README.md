@@ -56,3 +56,7 @@ GIT_AUTHOR_EMAIL="david.holy.ko@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
+
+#### Inspired by
+
+https://github.com/mathiasbynens/dotfiles
