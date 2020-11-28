@@ -27,3 +27,5 @@ else
 	fi;
 fi;
 unset doIt;
+
+exec zsh .zshrc
