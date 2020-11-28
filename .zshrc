@@ -10,6 +10,6 @@ zstyle ':vcs_info:git:*' formats '%F{69}%b%f'
  
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
-PROMPT='%B%F{208}%n%f in %F{76}${PWD/#$HOME/~}%f on %F{69}${vcs_info_msg_0_}%f ${NEWLINE}'
+PROMPT='%B%F{208}%n%f in %F{76}${PWD/#$HOME/~}%f on %F{69}${vcs_info_msg_0_}%f ${NEWLINE}%b'
 
 
