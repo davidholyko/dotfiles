@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
@@ -25,5 +27,3 @@ else
 	fi;
 fi;
 unset doIt;
-
-curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
