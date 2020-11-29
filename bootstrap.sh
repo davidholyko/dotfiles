@@ -4,7 +4,7 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin master;
+# git pull origin master;
 
 function doIt() {
 	rsync --exclude ".git/" \
@@ -15,6 +15,8 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
+	exec zsh .zshrc
+	source ~/.zshrc
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
@@ -27,5 +29,3 @@ else
 	fi;
 fi;
 unset doIt;
-
-exec zsh .zshrc
