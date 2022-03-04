@@ -22,5 +22,7 @@ brew install redis
 brew install postgresql
 brew install bash-completion
 
+brew install --cask visual-studio-code
+
 # Remove outdated versions from the cellar.
 brew cleanup
