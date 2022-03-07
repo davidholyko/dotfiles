@@ -1,0 +1,8 @@
+# Run terminal command cp .extra.sample .extra
+# and replace credentials
+GIT_AUTHOR_NAME="David Ko"
+GIT_COMMITTER_NAME="David Ko"
+GIT_AUTHOR_EMAIL="david.holy.ko@gmail.com"
+GIT_COMMITTER_EMAIL="david.holy.ko@gmail.com"
+git config --global user.name "David Ko"
+git config --global user.email "david.holy.ko@gmail.com"
