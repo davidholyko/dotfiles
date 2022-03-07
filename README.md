@@ -24,45 +24,35 @@ Copy theme into Downloads
 
 ```
 cp dko.terminal ~/Downloads/dko.terminal
-``
+```
 
-https://apple.stackexchange.com/questions/27878/how-can-i-install-themes-for-terminal
+Follow [this guide](https://apple.stackexchange.com/questions/27878/how-can-i-install-themes-for-terminal) to apply MacOS terminal themes.
 
 #### Install Manually
 
 ```
-
 # Install terminal setup
-
 cd ~/.dotfiles && source bootstrap.sh
-
 # Brew install packages
-
 cd ~/.dotfiles && source brew.sh
-
 ```
 
 #### Install Homebrew
 
 ```
-
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
 ```
 
-### Git Author and Commiter Settings
+### Update Git Author and Commiter Settings
 
 Don't forget to replace the information in .extras with your own information
 
 Run terminal command
 
 ```
-
 cp .git-settings.sample .git-settings
-
 ```
 
 ### Inspired by
 
 https://github.com/mathiasbynens/dotfiles
-```
