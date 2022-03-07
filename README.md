@@ -1,62 +1,68 @@
 ## David Ko Dotfiles
 
-#### Setup
+### Setup
+
+This repo was made for `zsh` shell for MacOS. To double check that your computer is on zsh, use this terminal command:
+
+```
+echo $SHELL
+```
+
+Run command below to clone repo and run terminal script.
 
 ```
 cd ~ && git clone https://github.com/davidholyko/dotfiles.git .dotfiles && cd ~/.dotfiles && source bootstrap.sh
 ```
 
-##### Terminal Text Colors
+#### Terminal Text Colors
 
 <img width="776" alt="Screen Shot 2020-07-14 at 10 40 55 PM" src="https://user-images.githubusercontent.com/20917792/87497216-23807e80-c623-11ea-9fd3-f835812e6edb.png">
 
-##### Install Manually
+#### Terminal Size and Font
+
+Copy theme into Downloads
 
 ```
+cp dko.terminal ~/Downloads/dko.terminal
+``
+
+https://apple.stackexchange.com/questions/27878/how-can-i-install-themes-for-terminal
+
+#### Install Manually
+
+```
+
+# Install terminal setup
+
 cd ~/.dotfiles && source bootstrap.sh
-```
 
-or with NPM command
+# Brew install packages
 
-```
-npm run setup-dotfiles
-```
-
-##### Install Homebrew
-
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
-
-##### Install with Homebrew
-
-```
 cd ~/.dotfiles && source brew.sh
-```
-
-or with NPM command
 
 ```
-npm run setup-brew
+
+#### Install Homebrew
+
 ```
 
-#### Extras
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+```
+
+### Git Author and Commiter Settings
 
 Don't forget to replace the information in .extras with your own information
 
-.extra file:
+Run terminal command
 
 ```
-# Git credentials
-# Not in the repository, to prevent people from accidentally committing under my name
-GIT_AUTHOR_NAME="David Ko"
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="david.holy.ko@gmail.com"
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+cp .git-settings.sample .git-settings
+
 ```
 
-#### Inspired by
+### Inspired by
 
 https://github.com/mathiasbynens/dotfiles
+```
