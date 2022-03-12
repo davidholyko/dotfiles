@@ -21,3 +21,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 
 # Set up auto-complete
 autoload -Uz compinit && compinit
+
+# Set up auto-complete when typing partially and pressing UP_ARROW
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
