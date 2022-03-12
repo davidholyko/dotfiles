@@ -10,7 +10,7 @@
 Run command below to clone repo and run terminal script.
 
 ```
-cd ~ && git clone https://github.com/davidholyko/dotfiles.git .dotfiles && cd ~/.dotfiles && source bootstrap.sh
+cd ~ && git clone https://github.com/davidholyko/dotfiles.git .dotfiles
 ```
 
 ## Pre-Requisites
@@ -54,17 +54,21 @@ cp .git-settings.sample .git-settings
 
 ### Terminal Text Colors
 
-<img width="776" alt="Screen Shot 2020-07-14 at 10 40 55 PM" src="https://user-images.githubusercontent.com/20917792/87497216-23807e80-c623-11ea-9fd3-f835812e6edb.png">
+<img width="700" alt="terminal prompt screenshot" src="./images/terminal-prompt.png">
 
 ### Terminal Size and Font
 
-Copy theme into Downloads folder and the go to `Terminal > Preferences > Profiles > Import Theme`
+1. Copy theme into Downloads folder
+2. Go to `Terminal > Preferences > Profiles > Import Theme`
+3. Use selected theme and set as default
 
 ```
 cp dko.terminal ~/Downloads/dko.terminal
 ```
 
 ### Terminal Background Color
+
+<img width="700" alt="change bg color screenshot" src="./images/change-bg-color.png">
 
 Run Command:
 

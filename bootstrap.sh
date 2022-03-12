@@ -26,5 +26,4 @@ unset bootstrap;
 
 # make change-bg-color an executable file
 # and move it to top level binary to be executed from anywhere
-sudo chmod a+rx ./change-bg-color
-sudo ln -s $HOME/.dotfiles/change-bg-color /usr/local/bin
+ln -s $HOME/.dotfiles/change-bg-color /usr/local/bin

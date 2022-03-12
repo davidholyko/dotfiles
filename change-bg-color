@@ -17,3 +17,4 @@ DEC_BLUE=$((16#$HEX_BLUE))
 
 osascript ~/.dotfiles/change-bg-color.scpt $DEC_RED $DEC_GREEN $DEC_BLUE
 
+echo "Terminal background color changed to $COLOR"
