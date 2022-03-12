@@ -25,7 +25,7 @@ echo $SHELL
 
 ### Homebrew
 
-The scripts require homebrew. please install homebrew with the command below.
+The scripts require homebrew. Please install homebrew with the command below.
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -69,11 +69,13 @@ git config --global user.email "git_email"
 
 <img width="700" alt="terminal prompt screenshot" src="./images/terminal-prompt.png">
 
-### Terminal Size and Font
+### Terminal Themes
 
 1. Copy theme into Downloads folder
 2. Go to `Terminal > Preferences > Profiles > Import Theme`
 3. Use selected theme and set as default
+
+_Follow [this guide](https://apple.stackexchange.com/questions/27878/how-can-i-install-themes-for-terminal) to apply MacOS terminal themes._
 
 ```
 cp dko.terminal ~/Downloads/dko.terminal
@@ -99,9 +101,6 @@ Functionality expects that your current directory has a `.vscode/settings.json` 
 }
 ```
 
-
-Follow [this guide](https://apple.stackexchange.com/questions/27878/how-can-i-install-themes-for-terminal) to apply MacOS terminal themes.
-
-### Inspired by
+## Inspired by
 
 https://github.com/mathiasbynens/dotfiles
