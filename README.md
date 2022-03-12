@@ -50,6 +50,19 @@ Run terminal command to copy the sample to fill in.
 cp .git-settings.sample .git-settings
 ```
 
+.git-settings looks like:
+
+```
+# Run terminal command and replace credentials:
+# cp .git-settings.sample .git-settings
+GIT_AUTHOR_NAME="git_name"
+GIT_COMMITTER_NAME="git_name"
+GIT_AUTHOR_EMAIL="git_email"
+GIT_COMMITTER_EMAIL="git_email"
+git config --global user.name "git_name"
+git config --global user.email "git_email"
+```
+
 ## Terminal
 
 ### Terminal Text Colors
