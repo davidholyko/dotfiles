@@ -58,11 +58,30 @@ cp .git-settings.sample .git-settings
 
 ### Terminal Size and Font
 
-Copy theme into Downloads folder.
+Copy theme into Downloads folder and the go to `Terminal > Preferences > Profiles > Import Theme`
 
 ```
 cp dko.terminal ~/Downloads/dko.terminal
 ```
+
+### Terminal Background Color
+
+Run Command:
+
+```
+change-bg-color
+```
+
+Functionality expects that your current directory has a `.vscode/settings.json` file with seetings like:
+
+```
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#561911",
+  }
+}
+```
+
 
 Follow [this guide](https://apple.stackexchange.com/questions/27878/how-can-i-install-themes-for-terminal) to apply MacOS terminal themes.
 

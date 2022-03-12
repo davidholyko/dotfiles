@@ -11,19 +11,15 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
-# Brew Install 
-brew install node
-brew install python
-brew install gnupg
+# Code Essentials 
 brew install git
-brew install mysql
+brew install node
 brew install nvm
-brew install redis
-brew install postgresql
-brew install bash-completion
+brew install python
 
-brew install --cask visual-studio-code
-brew install --cask slack
+# Programs
+brew install visual-studio-code --cask
+brew install slack --cask
 brew install docker
 
 # Remove outdated versions from the cellar.

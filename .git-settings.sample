@@ -1,8 +1,8 @@
-# Run terminal command cp .extra.sample .extra
-# and replace credentials
-GIT_AUTHOR_NAME="$GIT_AUTHOR_NAME"
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="${GIT_AUTHOR_EMAIL}"
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.name "$GIT_AUTHOR_NAME"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
+# Run terminal command and replace credentials:
+#   cp .git-settings.sample .git-settings
+GIT_AUTHOR_NAME="git_name"
+GIT_COMMITTER_NAME="git_name"
+GIT_AUTHOR_EMAIL="git_email"
+GIT_COMMITTER_EMAIL="git_email"
+git config --global user.name "git_name"
+git config --global user.email "git_email"

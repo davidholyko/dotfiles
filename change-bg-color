@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# grab 'activityBar.background' line and its value (# + 6 digits)
+COLOR=$(grep 'activityBar.background' .vscode/settings.json | grep -o '#......')
+
+# Hex Values
+# strip x characters from index y from word z
+# ${z:y:x}
+HEX_RED=${COLOR:1:2}
+HEX_GREEN=${COLOR:3:2}
+HEX_BLUE=${COLOR:5:2}
+
+# Decimal values
+DEC_RED=$((16#$HEX_RED))
+DEC_GREEN=$((16#$HEX_GREEN))
+DEC_BLUE=$((16#$HEX_BLUE))
+
+osascript ~/.dotfiles/change-bg-color.scpt $DEC_RED $DEC_GREEN $DEC_BLUE
+
