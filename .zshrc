@@ -1,7 +1,8 @@
-# Color chart reference https://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
+# Color chart reference:
+#   https://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
 # F{208} -> ORANGE
-# F{76} -> GREEN
-# F{69} -> BLUE
+# F{76}  -> GREEN
+# F{69}  -> BLUE
 
 # Load version control information
 autoload -Uz vcs_info

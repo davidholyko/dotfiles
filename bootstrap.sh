@@ -1,29 +1,18 @@
 #!/usr/bin/env bash
 
-function bootstrap() {
-	# rsync syncs the following files to a source destination.
-	# https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/
-	# copies all folders from this parent 'dotfiles' into '~' directory
-	rsync \
-		--exclude ".DS_Store" \
-	    --exclude ".git/" \
-		--exclude ".git-settings.sample" \
-		--exclude ".gitignore" \
-		--exclude ".osx" \
-		--exclude ".vscode" \
-		--exclude "bootstrap.sh" \
-		--exclude "brew.sh" \
-		--exclude "dko.terminal" \
-		--exclude "README.md" \
-		--exclude "change-bg-color" \
-		--exclude "change-bg-color.scpt" \
-		-avh --no-perms . ~;
-		source ~/.git-settings;
-}
+DOTFILES=".dotfiles"
 
-bootstrap;
-unset bootstrap;
+# remove top level .gitconfig and replace with a symbolic link 
+rm $HOME/.gitconfig
+ln -s $HOME/$DOTFILES/git/.gitconfig $HOME
 
-# make change-bg-color an executable file
-# and move it to top level binary to be executed from anywhere
-ln -s $HOME/.dotfiles/change-bg-color /usr/local/bin
+# remove top level .zshrc and replace with a symbolic link 
+rm $HOME/.zshrc
+ln -s $HOME/$DOTFILES/.zshrc $HOME
+
+# remove top level command and update its symbolic link
+rm /usr/local/bin/change-bg-color
+ln -s $HOME/$DOTFILES/scripts/change-bg-color /usr/local/bin
+
+# apply git settings
+source ./git/.git-settings;
