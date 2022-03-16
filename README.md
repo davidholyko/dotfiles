@@ -53,8 +53,6 @@ cp git/.git-settings.sample git/.git-settings
 .git-settings looks like:
 
 ```
-# Run terminal command and replace credentials:
-# cp .git-settings.sample .git-settings
 GIT_AUTHOR_NAME="git_name"
 GIT_COMMITTER_NAME="git_name"
 GIT_AUTHOR_EMAIL="git_email"
