@@ -35,9 +35,9 @@ The scripts require homebrew. Please install homebrew with the command below.
 
 ```
 # Install terminal setup
-cd ~/.dotfiles && source bootstrap.sh
+source bootstrap.sh
 # Brew install packages
-cd ~/.dotfiles && source brew.sh
+source brew.sh
 ```
 
 ## Git
@@ -47,7 +47,7 @@ cd ~/.dotfiles && source brew.sh
 Run terminal command to copy the sample to fill in.
 
 ```
-cp .git-settings.sample .git-settings
+cp git/.git-settings.sample git/.git-settings
 ```
 
 .git-settings looks like:
@@ -78,7 +78,7 @@ git config --global user.email "git_email"
 _Follow [this guide](https://apple.stackexchange.com/questions/27878/how-can-i-install-themes-for-terminal) to apply MacOS terminal themes._
 
 ```
-cp dko.terminal ~/Downloads/dko.terminal
+cp theme/dko.terminal ~/Downloads/dko.terminal
 ```
 
 ### Terminal Background Color
@@ -91,7 +91,7 @@ Run Command:
 change-bg-color
 ```
 
-Functionality expects that your current directory has a `.vscode/settings.json` file with seetings like:
+Command expects that your current directory has a `.vscode/settings.json` path with settings:
 
 ```
 {
