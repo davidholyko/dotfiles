@@ -1,6 +1,6 @@
 # David Ko Dotfiles
 
-- **[Prerequisites](#Prerequisites)**
+- **[Pre-requisites](#Pre-requisites)**
 - **[Installation](#Installation)**
 - **[Git](#Git)**
 - **[Terminal](#Terminal)**
@@ -44,13 +44,13 @@ source brew.sh
 
 ### Update Git Author and Commiter Settings
 
-Run terminal command to copy the sample to fill in.
+Run terminal command to copy the sample to fill in:
 
 ```
 cp git/.git-settings.sample git/.git-settings
 ```
 
-.git-settings looks like:
+**.git-settings** looks like:
 
 ```
 GIT_AUTHOR_NAME="git_name"
@@ -69,27 +69,27 @@ git config --global user.email "git_email"
 
 ### Terminal Themes
 
+```
+cp theme/dko.terminal ~/Downloads/dko.terminal
+```
+
 1. Copy theme into Downloads folder
 2. Go to `Terminal > Preferences > Profiles > Import Theme`
 3. Use selected theme and set as default
 
 _Follow [this guide](https://apple.stackexchange.com/questions/27878/how-can-i-install-themes-for-terminal) to apply MacOS terminal themes._
 
-```
-cp theme/dko.terminal ~/Downloads/dko.terminal
-```
-
 ### Terminal Background Color
 
 <img width="700" alt="change bg color screenshot" src="./images/change-bg-color.png">
 
-Run Command:
+Run command to sync your current terminal background color with a color in a relative file **.vscode/settings.json**:
 
 ```
 change-bg-color
 ```
 
-Command expects that your current directory has a `.vscode/settings.json` path with settings:
+**.vscode/settings.json** file should have settings like:
 
 ```
 {
