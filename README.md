@@ -61,6 +61,12 @@ git config --global user.name "git_name"
 git config --global user.email "git_email"
 ```
 
+### Ignore changes to .gitconfig after running bootstrap.sh
+
+```
+git update-index --skip-worktree /Users/davidko/.dotfiles/git/.gitconfig
+```
+
 ## Terminal
 
 ### Terminal Text Colors
