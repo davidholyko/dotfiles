@@ -20,9 +20,8 @@ brew install python
 # Programs
 brew install visual-studio-code --cask
 brew install slack --cask
-brew install docker
-brew install --cask discord
-brew install --cask postman
+brew install discord --cask
+brew install postman --cask
 
 # Remove outdated versions from the cellar.
 brew cleanup
