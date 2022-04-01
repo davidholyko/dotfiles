@@ -22,6 +22,7 @@ brew install visual-studio-code --cask
 brew install slack --cask
 brew install discord --cask
 brew install postman --cask
+brew install google-chrome --cask
 
 # Remove outdated versions from the cellar.
 brew cleanup
